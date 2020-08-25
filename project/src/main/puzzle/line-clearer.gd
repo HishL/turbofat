@@ -172,6 +172,10 @@ func _delete_rows() -> void:
 	# Calculate whether anything is dropping which will trigger the line fall sound.
 	var play_sound := false
 	var lines_being_deleted := lines_being_cleared + lines_being_erased
+	
+	for i in range(lines_being_deleted.size()):
+		lines_being_deleted[i] = PuzzleTileMap.ROW_COUNT - i - 1
+	
 	lines_being_deleted.sort()
 	var max_line: int = lines_being_deleted.back()
 	for y in range(0, max_line):
