@@ -189,3 +189,10 @@ static func english_number(i: int) -> String:
 			"six", "seven", "eight", "nine", "ten", \
 			"eleven", "twelve", "thirteen", "fourteen", "fifteen", \
 			"sixteen", "seventeen", "eighteen", "nineteen", "twenty"][i];
+
+
+"""
+Returns either the passed in String, or if the String is empty or null, the value of 'default'.
+"""
+static func default_if_null(s: String, default: String) -> String:
+	return s if s else default

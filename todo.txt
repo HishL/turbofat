@@ -1,0 +1,6 @@
+*use preroll/postroll paths in chat_library correctly
+*use default_if_null for level_id stuff in chat_library
+*can others use default_if_null?
+-split 'warn on missing chat tree' warings
+-does anybody pass a second parameter for 'chat_tree_for_creature'?
+-pick up the other StringUtils refactoring
